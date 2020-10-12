@@ -6,7 +6,7 @@ end
 
 def summon_captain_planet(planeteer_calls)
   planeteer_calls.map do |word|
-    word.upcase + "!"
+    word[0].upcase + word[1..-1] + "!"
   end
 end
 
